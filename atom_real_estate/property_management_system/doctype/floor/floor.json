@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "autoname": "field:floor_name",
+ "creation": "2022-09-01 17:43:59.264883",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "floor_name",
+  "floor_abbr"
+ ],
+ "fields": [
+  {
+   "fieldname": "floor_name",
+   "fieldtype": "Data",
+   "label": "Floor Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "floor_abbr",
+   "fieldtype": "Data",
+   "label": "Floor Abbr"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-01 15:39:16.390081",
+ "modified_by": "Administrator",
+ "module": "Property Management System",
+ "name": "Floor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

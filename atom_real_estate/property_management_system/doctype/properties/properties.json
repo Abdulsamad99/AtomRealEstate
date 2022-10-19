@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "autoname": "format:{building_code}-{floor_code}-{name1}",
+ "creation": "2022-09-01 13:54:12.276760",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "identification_section",
+  "name1",
+  "property_group",
+  "column_break_4",
+  "company",
+  "cost_center",
+  "unit_characteristics_section",
+  "unit_owner",
+  "title_deed_number",
+  "title_deed_date",
+  "master_bedroom",
+  "column_break_11",
+  "cnic",
+  "bedroom",
+  "common_bathroom",
+  "unit_details_section",
+  "building",
+  "building_code",
+  "area",
+  "builtup_area",
+  "carpet_area",
+  "column_break_22",
+  "floor",
+  "floor_code",
+  "rent",
+  "security_deposit",
+  "status",
+  "more_information_section",
+  "unit_assets",
+  "column_break_30",
+  "property_amenity",
+  "abbr"
+ ],
+ "fields": [
+  {
+   "fieldname": "identification_section",
+   "fieldtype": "Section Break",
+   "label": "IDENTIFICATION"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "property_group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Property Group",
+   "options": "\nFor Sale\nFor Lease",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "unit_characteristics_section",
+   "fieldtype": "Section Break",
+   "label": "UNIT CHARACTERISTICS"
+  },
+  {
+   "fieldname": "unit_owner",
+   "fieldtype": "Link",
+   "label": "Unit Owner",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "title_deed_number",
+   "fieldtype": "Data",
+   "label": "Title deed number"
+  },
+  {
+   "fieldname": "title_deed_date",
+   "fieldtype": "Date",
+   "label": "Title deed date"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "unit_owner.cnic",
+   "fieldname": "cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "bedroom",
+   "fieldtype": "Int",
+   "label": "Bedroom"
+  },
+  {
+   "fieldname": "master_bedroom",
+   "fieldtype": "Int",
+   "label": "Master bedroom"
+  },
+  {
+   "fieldname": "common_bathroom",
+   "fieldtype": "Int",
+   "label": "Common bathroom"
+  },
+  {
+   "fieldname": "unit_details_section",
+   "fieldtype": "Section Break",
+   "label": "UNIT DETAILS"
+  },
+  {
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "label": "Building",
+   "options": "Building"
+  },
+  {
+   "fetch_from": "building.building_abbr",
+   "fieldname": "building_code",
+   "fieldtype": "Data",
+   "label": "Building Code"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Area"
+  },
+  {
+   "fieldname": "builtup_area",
+   "fieldtype": "Float",
+   "label": "Builtup area"
+  },
+  {
+   "fieldname": "carpet_area",
+   "fieldtype": "Float",
+   "label": "Carpet area"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Link",
+   "label": "Floor",
+   "options": "Floor"
+  },
+  {
+   "fetch_from": "floor.floor_abbr",
+   "fieldname": "floor_code",
+   "fieldtype": "Data",
+   "label": "Floor Code"
+  },
+  {
+   "fieldname": "rent",
+   "fieldtype": "Currency",
+   "label": "Rent"
+  },
+  {
+   "fieldname": "security_deposit",
+   "fieldtype": "Currency",
+   "label": "Security Deposit"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nBooked\nCommon Area (Not for lease)\nManaged for Customer\nOff Lease in 3 Months\nOn Lease\nOn Sale\nRemoved\nRenewal\nSold\nVacating\nOn lease"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "MORE INFORMATION"
+  },
+  {
+   "fieldname": "unit_assets",
+   "fieldtype": "Table",
+   "label": "Unit Assets",
+   "options": "Unit Assets"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_amenity",
+   "fieldtype": "Table",
+   "label": "Property Amenity",
+   "options": "Property Amenity"
+  },
+  {
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "label": "Abbr"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-12 18:00:24.603348",
+ "modified_by": "Administrator",
+ "module": "Property Management System",
+ "name": "Properties",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "autoname": "field:building_name",
+ "creation": "2022-09-01 17:42:27.425667",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "building_name",
+  "building_abbr",
+  "column_break_3",
+  "location",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "building_name",
+   "fieldtype": "Data",
+   "label": "Building Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "building_abbr",
+   "fieldtype": "Data",
+   "label": "Building Abbr"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-01 16:03:21.363029",
+ "modified_by": "Administrator",
+ "module": "Property Management System",
+ "name": "Building",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,239 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-09-01 14:15:26.959613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "floor",
+  "builtup_area",
+  "column_break_4",
+  "property_id",
+  "building",
+  "type",
+  "current_owner_section",
+  "unit_owner",
+  "title_deed_date",
+  "column_break_12",
+  "cnic",
+  "title_deed_number",
+  "section_break_15",
+  "all_dues_clear",
+  "selling_price",
+  "balance_dues",
+  "transfer_fee_status",
+  "paid",
+  "transfer_fee",
+  "column_break_20",
+  "any_dispute",
+  "remarks",
+  "transfer_to",
+  "new_owner",
+  "title_deed_date_",
+  "column_break_28",
+  "cnic_",
+  "title_deed_number_",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "property_id.floor",
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fetch_from": "property_id.builtup_area",
+   "fieldname": "builtup_area",
+   "fieldtype": "Data",
+   "label": "Builtup area"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_id",
+   "fieldtype": "Link",
+   "label": "Property Id",
+   "options": "Properties"
+  },
+  {
+   "fetch_from": "property_id.building",
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "label": "Building",
+   "options": "Building"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "current_owner_section",
+   "fieldtype": "Section Break",
+   "label": "Current Owner"
+  },
+  {
+   "fetch_from": "property_id.unit_owner",
+   "fieldname": "unit_owner",
+   "fieldtype": "Link",
+   "label": "Unit Owner",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "property_id.title_deed_date",
+   "fieldname": "title_deed_date",
+   "fieldtype": "Date",
+   "label": "Title deed date"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "unit_owner.cnic",
+   "fieldname": "cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fetch_from": "property_id.title_deed_number",
+   "fieldname": "title_deed_number",
+   "fieldtype": "Data",
+   "label": "Title deed number"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "all_dues_clear",
+   "fieldtype": "Select",
+   "label": "All Dues Clear",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "selling_price",
+   "fieldtype": "Data",
+   "label": "Selling Price"
+  },
+  {
+   "fieldname": "balance_dues",
+   "fieldtype": "Data",
+   "label": "Balance Dues"
+  },
+  {
+   "fieldname": "transfer_fee_status",
+   "fieldtype": "Select",
+   "label": "Transfer Fee Status",
+   "options": "\nPaid\nUnpaid"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "any_dispute",
+   "fieldtype": "Select",
+   "label": "Any Dispute",
+   "options": "\nNil\nYes"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "paid",
+   "fieldtype": "Data",
+   "label": "Paid"
+  },
+  {
+   "fieldname": "transfer_fee",
+   "fieldtype": "Data",
+   "label": "Transfer Fee"
+  },
+  {
+   "fieldname": "transfer_to",
+   "fieldtype": "Section Break",
+   "label": "Transfer To"
+  },
+  {
+   "fieldname": "new_owner",
+   "fieldtype": "Link",
+   "label": "New Owner",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "title_deed_date_",
+   "fieldtype": "Date",
+   "label": "Title deed date"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "new_owner.cnic",
+   "fieldname": "cnic_",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "title_deed_number_",
+   "fieldtype": "Data",
+   "label": "Title deed number"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ownership Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "SaifCo-OT-.YYYY.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-01 17:12:22.329840",
+ "modified_by": "Administrator",
+ "module": "Property Management System",
+ "name": "Ownership Transfer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
