@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "autoname": "field:society_name",
+ "creation": "2022-12-09 15:08:25.211120",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "society_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "society_name",
+   "fieldtype": "Data",
+   "label": "Society Name",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-09 15:08:47.979652",
+ "modified_by": "Administrator",
+ "module": "Property Management System",
+ "name": "Society",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
