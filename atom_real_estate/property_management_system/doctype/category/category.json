@@ -1,33 +1,27 @@
 {
  "actions": [],
- "autoname": "field:society_name",
- "creation": "2022-12-09 15:08:25.211120",
+ "autoname": "field:category_name",
+ "creation": "2022-12-13 07:42:20.708981",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "society_name",
-  "society_abbr"
+  "category_name"
  ],
  "fields": [
   {
-   "fieldname": "society_name",
+   "fieldname": "category_name",
    "fieldtype": "Data",
-   "label": "Society Name",
+   "label": "Category Name",
    "unique": 1
-  },
-  {
-   "fieldname": "society_abbr",
-   "fieldtype": "Data",
-   "label": "Society Abbr"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-12 12:45:38.830149",
+ "modified": "2022-12-13 07:43:12.539080",
  "modified_by": "Administrator",
  "module": "Property Management System",
- "name": "Society",
+ "name": "Category",
  "owner": "Administrator",
  "permissions": [
   {
@@ -43,6 +37,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

@@ -24,6 +24,11 @@ atom_real_estate/property_management_system/doctype/area/area.js
 atom_real_estate/property_management_system/doctype/area/area.json
 atom_real_estate/property_management_system/doctype/area/area.py
 atom_real_estate/property_management_system/doctype/area/test_area.py
+atom_real_estate/property_management_system/doctype/booking_form/__init__.py
+atom_real_estate/property_management_system/doctype/booking_form/booking_form.js
+atom_real_estate/property_management_system/doctype/booking_form/booking_form.json
+atom_real_estate/property_management_system/doctype/booking_form/booking_form.py
+atom_real_estate/property_management_system/doctype/booking_form/test_booking_form.py
 atom_real_estate/property_management_system/doctype/building/__init__.py
 atom_real_estate/property_management_system/doctype/building/building.js
 atom_real_estate/property_management_system/doctype/building/building.json
@@ -55,6 +60,11 @@ atom_real_estate/property_management_system/doctype/properties/test_properties.p
 atom_real_estate/property_management_system/doctype/property_amenity/__init__.py
 atom_real_estate/property_management_system/doctype/property_amenity/property_amenity.json
 atom_real_estate/property_management_system/doctype/property_amenity/property_amenity.py
+atom_real_estate/property_management_system/doctype/society/__init__.py
+atom_real_estate/property_management_system/doctype/society/society.js
+atom_real_estate/property_management_system/doctype/society/society.json
+atom_real_estate/property_management_system/doctype/society/society.py
+atom_real_estate/property_management_system/doctype/society/test_society.py
 atom_real_estate/property_management_system/doctype/unit_assets/__init__.py
 atom_real_estate/property_management_system/doctype/unit_assets/unit_assets.json
 atom_real_estate/property_management_system/doctype/unit_assets/unit_assets.py
@@ -63,5 +73,6 @@ atom_real_estate/property_management_system/doctype/unit_type/test_unit_type.py
 atom_real_estate/property_management_system/doctype/unit_type/unit_type.js
 atom_real_estate/property_management_system/doctype/unit_type/unit_type.json
 atom_real_estate/property_management_system/doctype/unit_type/unit_type.py
+atom_real_estate/property_management_system/workspace/real_estate/real_estate.json
 atom_real_estate/templates/__init__.py
 atom_real_estate/templates/pages/__init__.py

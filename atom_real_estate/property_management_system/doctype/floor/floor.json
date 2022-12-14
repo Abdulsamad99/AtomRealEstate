@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "floor_name",
-  "floor_abbr"
+  "floor_abbr",
+  "building"
  ],
  "fields": [
   {
@@ -20,11 +21,17 @@
    "fieldname": "floor_abbr",
    "fieldtype": "Data",
    "label": "Floor Abbr"
+  },
+  {
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "label": "Building",
+   "options": "Building"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-01 15:39:16.390081",
+ "modified": "2022-12-12 13:01:10.721614",
  "modified_by": "Administrator",
  "module": "Property Management System",
  "name": "Floor",

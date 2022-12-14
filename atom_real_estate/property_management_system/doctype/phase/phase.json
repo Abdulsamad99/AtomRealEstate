@@ -1,33 +1,33 @@
 {
  "actions": [],
- "autoname": "field:society_name",
- "creation": "2022-12-09 15:08:25.211120",
+ "autoname": "field:phase_name",
+ "creation": "2022-12-12 12:46:31.665301",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "society_name",
-  "society_abbr"
+  "phase_name",
+  "phase_abbr"
  ],
  "fields": [
   {
-   "fieldname": "society_name",
+   "fieldname": "phase_name",
    "fieldtype": "Data",
-   "label": "Society Name",
+   "label": "Phase Name",
    "unique": 1
   },
   {
-   "fieldname": "society_abbr",
+   "fieldname": "phase_abbr",
    "fieldtype": "Data",
-   "label": "Society Abbr"
+   "label": "Phase Abbr"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-12 12:45:38.830149",
+ "modified": "2022-12-12 12:47:01.637327",
  "modified_by": "Administrator",
  "module": "Property Management System",
- "name": "Society",
+ "name": "Phase",
  "owner": "Administrator",
  "permissions": [
   {

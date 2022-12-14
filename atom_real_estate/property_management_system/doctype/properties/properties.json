@@ -12,12 +12,14 @@
   "property_group",
   "society",
   "plot_name",
+  "building",
   "naming",
   "column_break_4",
   "company",
   "cost_center",
   "billing_item",
   "billing_group",
+  "floor",
   "unit_characteristics_section",
   "unit_owner",
   "title_deed_number",
@@ -28,16 +30,15 @@
   "bedroom",
   "common_bathroom",
   "unit_details_section",
-  "building",
   "building_code",
   "area",
   "builtup_area",
   "carpet_area",
   "column_break_22",
-  "floor",
   "floor_code",
   "rent",
   "security_deposit",
+  "size",
   "status",
   "more_information_section",
   "unit_assets",
@@ -141,6 +142,7 @@
    "label": "UNIT DETAILS"
   },
   {
+   "depends_on": "eval:doc.property_type==\"Apartment\"",
    "fieldname": "building",
    "fieldtype": "Link",
    "label": "Building",
@@ -150,22 +152,25 @@
    "fetch_from": "building.building_abbr",
    "fieldname": "building_code",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Building Code"
   },
   {
    "fieldname": "area",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Area",
    "options": "Area"
   },
   {
    "fieldname": "builtup_area",
    "fieldtype": "Float",
-   "label": "Builtup area"
+   "label": "Builtup area(SQYRDs)"
   },
   {
    "fieldname": "carpet_area",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Carpet area"
   },
   {
@@ -173,6 +178,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.property_type==\"Apartment\"",
    "fieldname": "floor",
    "fieldtype": "Link",
    "label": "Floor",
@@ -182,16 +188,19 @@
    "fetch_from": "floor.floor_abbr",
    "fieldname": "floor_code",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Floor Code"
   },
   {
    "fieldname": "rent",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Rent"
   },
   {
    "fieldname": "security_deposit",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Security Deposit"
   },
   {
@@ -277,11 +286,16 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Floor Abbr"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size/Dimension"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-12-09 16:20:27.649331",
+ "modified": "2022-12-13 07:40:07.153676",
  "modified_by": "Administrator",
  "module": "Property Management System",
  "name": "Properties",
